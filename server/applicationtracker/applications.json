@@ -1,0 +1,166 @@
+[
+  {
+    "_id": { "$oid": "6641b2a0e13c4a1b2c3d5001" },
+    "user_id": { "$oid": "6641a1f0e13c4a1b2c3d4e5f" },
+    "company": "Razorpay",
+    "role": "Backend Engineer Intern",
+    "job_description": "We are looking for a Backend Engineer Intern to join our Payments Infrastructure team. You will work on building and scaling APIs that handle millions of transactions daily. Responsibilities include designing RESTful APIs, writing unit and integration tests, and collaborating with senior engineers on system design. Required skills: proficiency in Go or Java, understanding of SQL and NoSQL databases, familiarity with REST APIs, basic knowledge of distributed systems. Bonus: experience with Kafka, Redis, or Docker. This is a 6-month internship based out of Bangalore.",
+    "resume_version": "I am a third-year Computer Science student at BITS Pilani with a CGPA of 8.4. I have built a URL shortener service in Go using Gin and Redis, deployed on AWS EC2. I am familiar with MongoDB and PostgreSQL from personal projects. I have completed the backend track on roadmap.sh and built 3 REST API projects. I have no prior internship experience but have contributed to one open source Go project on GitHub.",
+    "status": "Applied",
+    "applied_date": "2025-05-10T00:00:00Z",
+    "notes": "Applied via LinkedIn. Got a confirmation email. Referral from a college senior who works there.",
+    "ai_analysis": {
+      "score": 72,
+      "fit_label": "Moderate",
+      "strengths": [
+        "Go experience directly matches their primary backend language",
+        "MongoDB and PostgreSQL familiarity covers their NoSQL and SQL requirement",
+        "Deployed a real project on AWS which shows practical infrastructure exposure"
+      ],
+      "gaps": [
+        "No experience with Kafka or Redis at a production scale",
+        "No prior internship or industry experience",
+        "No mention of writing tests which they explicitly require"
+      ],
+      "tip": "Add a section to your resume specifically mentioning unit tests you wrote for your Go projects, even if they are simple — the JD explicitly calls out testing as a responsibility.",
+      "analyzed_at": "2025-05-10T14:32:00Z"
+    },
+    "created_at": "2025-05-10T14:00:00Z",
+    "updated_at": "2025-05-10T14:32:00Z"
+  },
+
+  {
+    "_id": { "$oid": "6641b2a0e13c4a1b2c3d5002" },
+    "user_id": { "$oid": "6641a1f0e13c4a1b2c3d4e5f" },
+    "company": "Zerodha",
+    "role": "Software Development Engineer",
+    "job_description": "Zerodha is hiring an SDE to work on our trading platform backend. You will own features end-to-end, from database schema design to API delivery. We value engineers who write clean, maintainable code over those who can recite algorithms. Stack is Python and Go. We use PostgreSQL heavily. No microservices — we prefer a well-structured monolith. Must be comfortable reading and understanding existing codebases. Good written communication is non-negotiable since we are async-first. No required degree — we care about what you have built.",
+    "resume_version": "I am a final-year student with strong Go and some Python experience. I have built a job application tracker (full stack: Go, React, MongoDB) with JWT authentication and OpenAI integration for resume analysis. I maintain a technical blog where I write about backend concepts. I contributed a bug fix to an open source Python library. My GitHub has 12 public repositories. I am comfortable reading large codebases — I have read parts of the Gin framework source to understand middleware chaining.",
+    "status": "Interview",
+    "applied_date": "2025-04-28T00:00:00Z",
+    "notes": "Got a reply within 3 days. First round was a take-home — build a small CLI tool. Second round scheduled for next week. They seem to value writing — mention the blog.",
+    "ai_analysis": {
+      "score": 85,
+      "fit_label": "Strong",
+      "strengths": [
+        "Go experience is a strong match and the job tracker project demonstrates real full-stack ownership",
+        "Technical blog directly addresses their non-negotiable written communication requirement",
+        "Reading Gin source code signals the kind of curiosity Zerodha explicitly values"
+      ],
+      "gaps": [
+        "MongoDB experience does not transfer directly — they use PostgreSQL heavily",
+        "Python experience is described as some which may be a weak point",
+        "No mention of async workflows or working in a team codebase"
+      ],
+      "tip": "Do a small PostgreSQL project or add SQL queries to an existing project and mention it — even a one-day exercise matters because PostgreSQL is the heart of their stack.",
+      "analyzed_at": "2025-04-29T09:15:00Z"
+    },
+    "created_at": "2025-04-28T18:00:00Z",
+    "updated_at": "2025-05-12T10:00:00Z"
+  },
+
+  {
+    "_id": { "$oid": "6641b2a0e13c4a1b2c3d5003" },
+    "user_id": { "$oid": "6641a1f0e13c4a1b2c3d4e60" },
+    "company": "Google",
+    "role": "STEP Intern",
+    "job_description": "The STEP internship is designed for first and second-year undergraduate students from groups historically underrepresented in tech. Interns are matched with a team based on interests and skills. Projects span frontend, backend, ML, and infrastructure. You will be paired with a senior engineer mentor. Required: programming experience in at least one language (C++, Java, Python, Go), basic data structures and algorithms knowledge (arrays, linked lists, trees, sorting). Preferred: coursework in computer science fundamentals. Candidates must be in their first or second year of a Bachelor's degree program.",
+    "resume_version": "I am a second-year Computer Science student. I know Python and have recently started learning Go. I have built small projects: a to-do app in Python Flask and a weather dashboard using a public API. I have completed 50 LeetCode problems (mostly Easy, some Medium). I have a CGPA of 7.8. I have not done any internship before. I am comfortable with arrays, linked lists, and basic sorting algorithms from my Data Structures course.",
+    "status": "Rejected",
+    "applied_date": "2025-02-15T00:00:00Z",
+    "notes": "Got a generic rejection email after 3 weeks. No feedback given. Will try again next year with stronger DSA prep and better projects.",
+    "ai_analysis": {
+      "score": 48,
+      "fit_label": "Weak",
+      "strengths": [
+        "Eligibility criteria is met — second-year student with CS background",
+        "Python experience and Flask project show basic backend familiarity",
+        "LeetCode practice demonstrates awareness of what the interview process requires"
+      ],
+      "gaps": [
+        "50 LeetCode problems mostly Easy is insufficient for a Google interview",
+        "Projects are too shallow — no project demonstrates systems thinking",
+        "No demonstration of CS fundamentals depth beyond surface-level coursework"
+      ],
+      "tip": "Focus the next 3 months on LeetCode Trees, Graphs, and Dynamic Programming and rebuild one project with a real problem in mind — depth on one strong project beats three shallow ones for FAANG applications.",
+      "analyzed_at": "2025-02-16T11:00:00Z"
+    },
+    "created_at": "2025-02-15T10:00:00Z",
+    "updated_at": "2025-03-08T09:00:00Z"
+  },
+
+  {
+    "_id": { "$oid": "6641b2a0e13c4a1b2c3d5004" },
+    "user_id": { "$oid": "6641a1f0e13c4a1b2c3d4e60" },
+    "company": "Postman",
+    "role": "Frontend Engineer",
+    "job_description": "We are looking for a Frontend Engineer to join the Postman API Platform team. You will build UI features used by millions of developers worldwide. Responsibilities: build React components, collaborate with designers on Figma mockups, write Jest tests, optimize rendering performance. Required: strong React and JavaScript ES6+, CSS proficiency, experience with REST APIs from the frontend, understanding of browser performance. Bonus: TypeScript, experience with WebSockets or real-time data, contributions to open source.",
+    "resume_version": "I have been building in React for 8 months. I built the frontend for my job application tracker project (React with React Router, custom hooks, Axios for API calls, JWT cookie handling). I have also built a personal portfolio site. I am comfortable with CSS and have used Tailwind. I have not used TypeScript yet. I have no experience with Jest or formal testing on the frontend. I understand how REST APIs work from both sides since I also built the Go backend.",
+    "status": "Saved",
+    "applied_date": null,
+    "notes": "Saving before I apply — want to add a TypeScript project and at least one Jest test to my job tracker first.",
+    "ai_analysis": null,
+    "created_at": "2025-05-20T16:00:00Z",
+    "updated_at": "2025-05-20T16:00:00Z"
+  },
+
+  {
+    "_id": { "$oid": "6641b2a0e13c4a1b2c3d5005" },
+    "user_id": { "$oid": "6641a1f0e13c4a1b2c3d4e61" },
+    "company": "Swiggy",
+    "role": "Backend Engineer",
+    "job_description": "Swiggy's Platform Engineering team is hiring a Backend Engineer to work on our order management and logistics systems. You will design and build microservices that handle high-throughput event streams. Required: 1–3 years experience, proficiency in Java or Go, experience with Kafka or RabbitMQ, familiarity with Docker and Kubernetes, strong understanding of distributed systems and eventual consistency. Bonus: experience with gRPC, service mesh (Istio), or observability tooling (Prometheus, Grafana).",
+    "resume_version": "I am a software engineer with 1.5 years of experience at a Series B startup. I built and maintained REST APIs in Java Spring Boot. I have used RabbitMQ for async job processing and deployed services on AWS ECS using Docker. I have some Kubernetes experience from a personal homelab setup. I understand distributed systems concepts from reading the DDIA book and writing about them on my blog. I have not used Go professionally but completed a course and built a small side project in it.",
+    "status": "Applied",
+    "applied_date": "2025-05-15T00:00:00Z",
+    "notes": "Applied through Swiggy careers page. Role was posted 2 days ago. Competitive — they get a lot of applications.",
+    "ai_analysis": {
+      "score": 68,
+      "fit_label": "Moderate",
+      "strengths": [
+        "RabbitMQ experience is directly relevant to their event-driven architecture requirement",
+        "Docker and AWS ECS experience satisfies their containerisation and deployment expectations",
+        "DDIA knowledge and blogging about distributed systems signals the right mindset for the role"
+      ],
+      "gaps": [
+        "No professional Go experience — the job lists Go as a primary language",
+        "Kubernetes experience is only from a homelab, not production workloads",
+        "No mention of observability tooling like Prometheus or Grafana"
+      ],
+      "tip": "Add a Go microservice project that uses Kafka or RabbitMQ to your GitHub — even a small producer/consumer demo shows intentional preparation for this specific role.",
+      "analyzed_at": "2025-05-15T18:45:00Z"
+    },
+    "created_at": "2025-05-15T17:00:00Z",
+    "updated_at": "2025-05-15T18:45:00Z"
+  },
+
+  {
+    "_id": { "$oid": "6641b2a0e13c4a1b2c3d5006" },
+    "user_id": { "$oid": "6641a1f0e13c4a1b2c3d4e61" },
+    "company": "Notion",
+    "role": "Full Stack Engineer",
+    "job_description": "Notion is looking for a Full Stack Engineer to join our Collaboration team. You will work across the stack on features like real-time multiplayer editing, comments, and notifications. Our backend is TypeScript/Node.js and our frontend is React. We use PostgreSQL and Redis. Strong product sense is a plus — we want engineers who think about the user experience, not just the implementation. 2+ years experience preferred. TypeScript required on both sides of the stack.",
+    "resume_version": "I have 1.5 years of professional experience. My backend work has been in Java but I write TypeScript in side projects and feel comfortable in it. I have built a real-time collaborative whiteboard prototype using Socket.IO and React — it supports live cursors and shared drawing. I use PostgreSQL at work and Redis for caching. I have contributed to two open source projects in the JavaScript ecosystem. I have strong opinions about UX and follow design blogs actively.",
+    "status": "Interview",
+    "applied_date": "2025-05-05T00:00:00Z",
+    "notes": "Recruiter reached out on LinkedIn. First round was a product design discussion — they asked how I would redesign Notion's comment threading. Second technical round next Friday.",
+    "ai_analysis": {
+      "score": 78,
+      "fit_label": "Strong",
+      "strengths": [
+        "Real-time whiteboard project is a direct proof point for their multiplayer editing focus",
+        "TypeScript comfort on both frontend and backend matches their strict requirement",
+        "Strong UX interest and design blog engagement aligns with their product-sense criterion"
+      ],
+      "gaps": [
+        "Professional backend experience is Java, not Node.js — could be a concern for senior reviewers",
+        "1.5 years of experience is below their 2+ years preference",
+        "No prior experience with a product at Notion's scale or complexity"
+      ],
+      "tip": "Before the technical round, prototype a small Node.js feature using their public API or webhooks — arriving with something you built in their stack signals you are already context-switching intentionally.",
+      "analyzed_at": "2025-05-06T10:00:00Z"
+    },
+    "created_at": "2025-05-05T12:00:00Z",
+    "updated_at": "2025-05-18T09:30:00Z"
+  }
+]
