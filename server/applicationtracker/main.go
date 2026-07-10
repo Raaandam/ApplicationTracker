@@ -13,6 +13,7 @@ func main() {
 	router.GET("/applications", controller.GetApplications())
 	router.GET("application/:_id", controller.GetApplication())
 	router.POST("/:User_id/addapplication", controller.AddApllication())
+	router.POST("/auth/register", controller.RegisterUser())
 
 	if err := router.Run(":8080"); err != nil {
 		fmt.Println("Failed to start server", err)
