@@ -23,7 +23,7 @@ type UserLogin struct {
 }
 
 type UserResponse struct {
-	UserId string `json:"user_id"`
+	UserID string `json:"user_id"`
 	Name   string `json:"name"`
 	Email  string `json:"email"`
 	//not goint to implement token and refresh token. will send http only cookies using c.SetCookie()

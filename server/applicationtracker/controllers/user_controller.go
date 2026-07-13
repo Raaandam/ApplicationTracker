@@ -1,5 +1,6 @@
 package controllers
 
+//change secure = true
 import (
 	"context"
 	"net/http"
@@ -7,6 +8,7 @@ import (
 
 	"github.com/Raaandam/ApplicationTracker/Server/ApplicationTrackerServer/database"
 	model "github.com/Raaandam/ApplicationTracker/Server/ApplicationTrackerServer/models"
+	"github.com/Raaandam/ApplicationTracker/Server/ApplicationTrackerServer/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.mongodb.org/mongo-driver/v2/bson"
@@ -30,7 +32,7 @@ func RegisterUser() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var user model.User
 		if err := c.ShouldBindJSON(&user); err != nil {
-			c.JSON(http.StatusBadRequest, gin.H{"error": ""})
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid JSON Format"})
 			return
 		}
 
@@ -62,9 +64,11 @@ func RegisterUser() gin.HandlerFunc {
 			c.JSON(http.StatusConflict, gin.H{"error": "User already exists"})
 			return
 		}
-
+		//name and other things will be already filled by ShouldBindJSON
 		user.ID = bson.NewObjectID()
 		user.CreatedAt = time.Now()
+		user.Password = hashedPassword
+		user.UpdatedAt = time.Now()
 
 		result, err := userCollection.InsertOne(ctx, user)
 
@@ -104,5 +108,33 @@ func LoginUser() gin.HandlerFunc {
 			return
 		}
 
+		token, refreshToken, err := utils.GenerateAllTokens(foundUser.Email, foundUser.Name, foundUser.ID.Hex())
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate tokens"})
+			return
+		}
+
+		err = utils.UpdateAllTokens(foundUser.ID.Hex(), token, refreshToken)
+
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update tokens"})
+			return
+		}
+
+		//c.SetCookie(name, value, maxAge, path, domain, secure, httpOnly)
+		//path should be "/" so that it is allowed everywhere instead of lets say /login only
+
+		c.SetCookie("access_token", token, 3600, "/", "localhost", false, true)
+
+		c.SetCookie("refresh_token", refreshToken, 86400, "/", "localhost", false, true)
+
+		//secure=false for local development (change to true in production with HTTPS)
+		//will see httpOnly = true later on
+
+		c.JSON(http.StatusOK, model.UserResponse{
+			UserID: foundUser.ID.Hex(),
+			Name:   foundUser.Name,
+			Email:  foundUser.Email,
+		})
 	}
 }
